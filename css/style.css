@@ -5,10 +5,13 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: white;
+  text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 html,body {
   background-color: #141414;
+  height: 500vh;
 }
 
 /* Navbar */
@@ -72,11 +75,18 @@ a:hover:after{
   padding: 0.5rem 1rem;
 }
 
+.nav-links a:active {
+  transition: 3s;
+}
+
 /* Frontpage */
 
 .frontpage {
   position: static;
-  background-image: url(/img/background.png);
+  background-image: url(https://yusuf0celik.github.io/portfolio/img/background.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
 }
@@ -105,6 +115,7 @@ a:hover:after{
 .arrow-down {
   display: flex;
   justify-content: flex-end;
+  position: sticky;
   margin: 30.5rem 0 5px;
   font-size: 2.5rem;
   animation: arrow 2s ease-in-out infinite;
@@ -130,18 +141,73 @@ a:hover:after{
 
 .aboutme-title {
   margin-top: 5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 3rem;
   font-size: 1.3rem;
   text-align: center;
 }
 
 .aboutme-text {
-  max-width: 400px;
+  max-width: 25rem;
   min-width: auto;
+  margin-left: auto;
+  margin-right: 75px;
   font-size: 1.15rem;
 }
 
-/* .aboutme-img */
+.aboutme-text a {
+  color: #00EBB7;
+}
+
+.aboutme-img {
+  background-image: url(https://yusuf0celik.github.io/portfolio/img/aboutmeimg.jpg);
+  max-width: 25rem;
+  height: 30rem;
+  overflow: hidden;
+  margin-left: 75px;
+  margin-right: auto;
+}
+
+.aboutme-img img {
+  width: 1100px;
+  height: 600px;
+  transform: translateX(-220px);
+}
+
+/* .Projects */
+
+.projects-title {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.project-content ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.project img {
+  position: absolute;
+}
+
+.project {
+  width: 250px;
+  height: 250px;
+}
+
+.project1 {
+  margin-left: auto;
+}
+
+.project2 {
+  margin: 0 1rem;
+}
+
+.project3 {
+  margin-right: auto;
+}
+
 
 /* Scrollbar */
 
