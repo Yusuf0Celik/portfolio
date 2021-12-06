@@ -20,17 +20,20 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: transparent;
+  background-color: #ffffff01;
+  backdrop-filter: blur(1rem);
   font-size: 1.5rem;
   padding: 8px;
   user-select: none;
+  z-index: 100;
 }
 
 .nav-background {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  width: 100%;
+  background-color: #ffffff01;
 }
 
 .nav-logo {
@@ -79,10 +82,31 @@ a:hover:after{
   transition: 3s;
 }
 
+.hamburger-menu, 
+.hamburger-menu button, 
+.hamburger-menu i {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.hamburger-menu {
+  padding: 10px;
+}
+
+.hamburger-menu input {
+  cursor: pointer;
+  /* visibility: hidden; */
+}
+
 /* Frontpage */
 
 .frontpage {
-  position: static;
   background-image: url(https://yusuf0celik.github.io/portfolio/img/background.png);
   background-position: center;
   background-size: cover;
@@ -95,7 +119,7 @@ a:hover:after{
   display: flex;
   justify-content: center;
   text-align: center;
-  padding-top: 20%;
+  padding-top: 20rem;
   height: 4rem;
 }
 
@@ -106,6 +130,7 @@ a:hover:after{
   user-select: none;
   transition: 200ms ease;
   font-weight: 600;
+  height: 4rem;
 }
 
 .frontpage h1:hover {
@@ -116,7 +141,7 @@ a:hover:after{
   display: flex;
   justify-content: flex-end;
   position: sticky;
-  margin: 30.5rem 0 5px;
+  margin: 34.5rem 0 5px;
   font-size: 2.5rem;
   animation: arrow 2s ease-in-out infinite;
 }
@@ -207,6 +232,27 @@ a:hover:after{
   margin-right: auto;
 }
 
+/* Media Queries */
+
+@media (max-width: 576px) {
+  
+}
+
+@media (max-width: 768px) {
+  .nav-links-div {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .hamburger-menu {
+    display: none;
+  }
+  
+}
+
+@media (min-width: 992px) {
+}
 
 /* Scrollbar */
 
