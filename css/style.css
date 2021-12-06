@@ -1,3 +1,5 @@
+/* General */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,7 +13,6 @@
 
 html,body {
   background-color: #141414;
-  height: 500vh;
 }
 
 /* Navbar */
@@ -99,11 +100,6 @@ a:hover:after{
   padding: 10px;
 }
 
-.hamburger-menu input {
-  cursor: pointer;
-  /* visibility: hidden; */
-}
-
 /* Frontpage */
 
 .frontpage {
@@ -167,7 +163,7 @@ a:hover:after{
 .aboutme-title {
   margin-top: 5rem;
   margin-bottom: 3rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 
@@ -202,7 +198,7 @@ a:hover:after{
 .projects-title {
   margin-top: 5rem;
   margin-bottom: 3rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 
@@ -230,6 +226,54 @@ a:hover:after{
 
 .project3 {
   margin-right: auto;
+}
+
+/* Contact */
+
+.contact-title {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.contact-links {
+  width: 150px;
+  margin: 0 auto;
+  font-size: 1.3rem;
+}
+
+.contact-links a, .contact-links i {
+  color: #00EBB7;
+}
+
+.contact-links ul {
+  list-style-type: none;
+}
+
+.social-link {
+  width: 9rem;
+  height: auto;
+  padding: 5px;
+  border-radius: 0.5rem;
+  transition: 0.2s ease;
+}
+
+.social-link:hover {
+  background-color: #ffffff20;
+}
+
+.social-link:hover a, .social-link:hover i {
+  color: #00EBB7;
+}
+
+/* Footer */
+
+.footer {
+  margin-top: 9rem;
+  background-color: #090909;
+  font-size: 0.9rem;
+  text-align: center;
 }
 
 /* Media Queries */
