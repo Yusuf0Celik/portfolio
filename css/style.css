@@ -88,25 +88,23 @@ a:hover:after{
 
 .hamburger-menu {
   padding: 10px;
+  z-index: 100;
 }
 
 .hamburger-menu input {
-  width: 1.5rem;
+  width: 1.44rem;
   height: 1.25rem;
   position: absolute;
-  right: 1.18 rem;
-  top: 1rem;
-  opacity: 1;
+  right: 1.2rem;
+  top: 1.1rem;
+  opacity: 0;
   z-index: 3;
-  cursor: grab;
+  cursor: pointer;
 }
 
-.hamburger-menu input:checked .menu-toggle {
+.hamburger-menu input:checked ~ .menu-toggle-div ul {
   padding-top: 4rem;
-  position: absolute;
-  right: 1.18rem;
-  top: 1rem;
-  transform: translateX(0);
+  transform: translateY(-57px);
 }
 
 .hamburger-menu span {
@@ -121,17 +119,18 @@ a:hover:after{
 .menu-toggle {
   list-style-type: none;
   text-align: right;
-  background-color: #ffffff30;
+  background-color: #ffffff10;
+  backdrop-filter: blur(1rem);
   width: 10rem;
   height: 15rem;
+  border-radius: 1px 0.15rem;
   position: absolute;
   padding-top: 4rem;
   right: 0;
-  top: 0;
-  transform: translateX(100%);
-  transition: 2s;
+  transform-origin: 0% 0%;
+  transform: translate(100%, -57px);
+  transition: transform 1s cubic-bezier(0.75, 0.01, 0.25, 1);
 }
-
 
 .menu-toggle li {
   padding: 0.75rem;
@@ -141,10 +140,6 @@ a:hover:after{
   color: #00ffff;
   transition: 0.3s ease;
 }
-
-/* .hamburger-menu input:checked {
-
-} */
 
 /* Frontpage */
 
