@@ -13,6 +13,7 @@
 
 html,body {
   background-color: #141414;
+  overflow-x: hidden;
 }
 
 /* Navbar */
@@ -83,22 +84,67 @@ a:hover:after{
   transition: 3s;
 }
 
-.hamburger-menu, 
-.hamburger-menu button, 
-.hamburger-menu i {
-  cursor: pointer;
-  background-color: transparent;
-  outline: none;
-  border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.6rem;
-}
+/* Hamburger Menu */
 
 .hamburger-menu {
   padding: 10px;
 }
+
+.hamburger-menu input {
+  width: 1.5rem;
+  height: 1.25rem;
+  position: absolute;
+  right: 1.18 rem;
+  top: 1rem;
+  opacity: 1;
+  z-index: 3;
+  cursor: grab;
+}
+
+.hamburger-menu input:checked .menu-toggle {
+  padding-top: 4rem;
+  position: absolute;
+  right: 1.18rem;
+  top: 1rem;
+  transform: translateX(0);
+}
+
+.hamburger-menu span {
+  display: block;
+  width: 1.25rem;
+  height: 3px;
+  margin: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+.menu-toggle {
+  list-style-type: none;
+  text-align: right;
+  background-color: #ffffff30;
+  width: 10rem;
+  height: 15rem;
+  position: absolute;
+  padding-top: 4rem;
+  right: 0;
+  top: 0;
+  transform: translateX(100%);
+  transition: 2s;
+}
+
+
+.menu-toggle li {
+  padding: 0.75rem;
+}
+
+.menu-toggle a:hover {
+  color: #00ffff;
+  transition: 0.3s ease;
+}
+
+/* .hamburger-menu input:checked {
+
+} */
 
 /* Frontpage */
 
@@ -283,6 +329,11 @@ a:hover:after{
 }
 
 @media (max-width: 768px) {
+  .nav-logo-div {
+    padding-left: 46px;
+    margin: 0 auto;
+  }
+  
   .nav-links-div {
     display: none;
   }
