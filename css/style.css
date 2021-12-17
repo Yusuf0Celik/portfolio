@@ -178,7 +178,7 @@ a:hover:after{
   display: flex;
   justify-content: flex-end;
   position: sticky;
-  margin: 34.5rem 0 5px;
+  margin: 30% 0 5px;
   font-size: 2.5rem;
   animation: arrow 2s ease-in-out infinite;
 }
@@ -249,7 +249,7 @@ a:hover:after{
 }
 
 .project img {
-  position: absolute;
+  border-radius: .25rem;
 }
 
 .project {
@@ -312,6 +312,7 @@ a:hover:after{
 
 .footer {
   margin-top: 9rem;
+  padding: .5rem;
   background-color: #090909;
   font-size: 0.9rem;
   text-align: center;
@@ -320,7 +321,6 @@ a:hover:after{
 /* Media Queries */
 
 @media (max-width: 576px) {
-  
 }
 
 @media (max-width: 768px) {
@@ -332,6 +332,22 @@ a:hover:after{
   .nav-links-div {
     display: none;
   }
+  
+  .project-content ul {
+    display: block;
+  }
+  
+  .project1 {
+    margin: 0 auto;
+  }
+  
+  .project2 {
+    margin: 0.5rem auto;
+  }
+  
+  .project3 {
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 768px) {
@@ -341,7 +357,20 @@ a:hover:after{
   
 }
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
+  .aboutme-content {
+    display: block;
+  }
+  
+  .aboutme-text {
+    margin: 0 auto;
+    padding: 0.5rem;
+  }
+  
+  .aboutme-img {
+    margin: 0 auto;
+    padding: 0.5rem;
+  }
 }
 
 /* Scrollbar */
