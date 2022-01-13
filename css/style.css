@@ -174,27 +174,6 @@ a:hover:after{
   font-size: 4rem;
 }
 
-.arrow-down {
-  display: flex;
-  justify-content: flex-end;
-  position: sticky;
-  margin: 30% 0 5px;
-  font-size: 2.5rem;
-  animation: arrow 2s ease-in-out infinite;
-}
-
-@keyframes arrow {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(1rem);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
 /* About Me */
 
 .aboutme-content {
@@ -262,11 +241,34 @@ a:hover:after{
 }
 
 .project2 {
-  margin: 0 1rem;
+  margin: auto;
+  background-image: url(https://yusuf0celik.github.io/portfolio/img/250x250.png);
 }
 
 .project3 {
   margin-right: auto;
+}
+
+.project-wrapper {
+  display: flex;
+  width: 250px;
+  height: 250px;
+}
+
+.preview-div {
+  display: inline-block;
+  position: relative;
+  bottom: 0;
+}
+
+.preview-project {
+  background-color: #00000030;
+  outline: none;
+  border: none;
+}
+
+.preview-project::after {
+  content: 'Preview';
 }
 
 /* Contact */
