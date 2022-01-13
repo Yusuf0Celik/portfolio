@@ -178,7 +178,7 @@ a:hover:after{
   display: flex;
   justify-content: flex-end;
   position: sticky;
-  margin: 30% 0 5px;
+  margin: 29% 0 5px;
   font-size: 2.5rem;
   animation: arrow 2s ease-in-out infinite;
 }
