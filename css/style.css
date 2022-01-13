@@ -251,14 +251,10 @@ a:hover:after{
 
 .project-wrapper {
   display: flex;
-  width: 250px;
-  height: 250px;
 }
 
 .preview-div {
-  display: inline-block;
-  position: relative;
-  bottom: 0;
+  height: 1rem;
 }
 
 .preview-project {
