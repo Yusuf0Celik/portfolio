@@ -234,37 +234,18 @@ a:hover:after{
 .project {
   width: 250px;
   height: 250px;
+  border-radius: .125rem;
 }
 
 .project1 {
-  margin-left: auto;
-}
-
-.project2 {
   margin: auto;
   background-image: url(https://yusuf0celik.github.io/portfolio/img/250x250.png);
 }
 
-.project3 {
-  margin-right: auto;
-}
-
-.project-wrapper {
-  display: flex;
-}
-
-.preview-div {
-  height: 1rem;
-}
-
-.preview-project {
-  background-color: #00000030;
-  outline: none;
-  border: none;
-}
-
-.preview-project::after {
-  content: 'Preview';
+#project-link {
+  display: block;
+  width: 250px;
+  height: 250px;
 }
 
 /* Contact */
