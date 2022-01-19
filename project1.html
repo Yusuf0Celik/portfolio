@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <title>Project 1</title>
+  <title>Portfolio | Project 1</title>
 </head>
 <body>
   <nav>
@@ -30,8 +30,28 @@
   </nav>
   <main>
     <div class="project-content">
-      
+      <div class="carousel">
+        <ul class="carousel-list">
+          <li class="slide current-slide">
+            <img src="img/carousel-image1.jpg" alt="Nature Pic 1">
+          </li>
+          <li class="slide">
+            <img src="img/carousel-image2.jfif" alt="Nature Pic 2">
+          </li>
+          <li class="slide">
+            <img src="img/carousel-image3.jpg" alt="Nature Pic 3">
+          </li>
+        </ul>
+        <div class="carousel-nav">
+          <button class="carousel-indicator"></button>
+          <button class="carousel-indicator"></button>
+          <button class="carousel-indicator"></button>
+        </div>
+        <button class="carousel-button prev bx bx-chevron-left"></button>
+        <button class="carousel-button next bx bx-chevron-right"></button>
+      </div>
     </div>
   </main>
+  <script src="./js/project1.js"></script>
 </body>
 </html>

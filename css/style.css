@@ -234,10 +234,11 @@ a:hover:after{
 .project {
   width: 250px;
   height: 250px;
+  border: 2px solid white;
   border-radius: .125rem;
 }
 
-.project1 {
+.carousel {
   margin: auto;
   background-image: url(https://yusuf0celik.github.io/portfolio/img/250x250.png);
 }

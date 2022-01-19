@@ -82,3 +82,61 @@ a:hover:after{
 .nav-links a:active {
   transition: 3s;
 }
+
+/* Carousel */
+
+main {
+  margin-top: 61px;
+}
+
+.project-content {
+  text-align: center;
+  margin-top: 8rem;
+}
+
+.slide {
+  display: none;
+}
+
+.current-slide {
+  display: initial;
+}
+
+.slide img {
+  border-radius: 0.25rem;
+}
+.carousel-button {
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.carousel-button:hover {
+  background-color: #00000030;
+}
+
+.prev {
+  position: relative;
+  top: -260px;
+  left: -470px;
+  transform: translateY(-50%);
+}
+
+.next {
+  position: relative;
+  top: -260px;
+  right: -470px;
+  transform: translateY(-50%);
+}
+
+.carousel-indicator {
+  width: 0.75rem;
+  height: 0.75rem;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  margin: 0.25rem 0.125rem;
+}
