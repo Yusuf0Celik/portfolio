@@ -1,4 +1,3 @@
-// Variables
 console.log("project1.js loaded");
 
 // Variables

@@ -97,23 +97,19 @@
         <ul>
           <li class="project carousel">
             <a id="project-link" href="project1.html"></a>
-            <button class="modal-button">Preview</button>
+            <button class="modal-button" data-modal-target="#modal">Preview</button>
             <div class="modal" id="modal">
               <div class="modal-head">
-                <h2 class="modal-title">Calculator</h2>
-                <i class="bx bx-window-close"></i>
+                <h2 class="modal-title">C to F Converter</h2>
+                <i class="bx bx-window-close" data-close-button></i>
               </div>
               <div class="modal-body">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Reiciendis cumque debitis temporibus aliquid. Iusto in corporis 
-                ducimus similique reprehenderit eum laborum libero sunt, 
-                officiis nobis est assumenda! Cumque expedita eaque minus 
-                voluptas voluptatem cupiditate, iste accusamus. Doloribus 
-                voluptatibus mollitia ab unde, libero corrupti omnis modi 
-                fugit, esse hic, tempore cupiditate.
+                Celsius <input type="text" id="toCelcius"><br>
+                Fahrenheit <input type="text" id="toFahrenheit"> <br>
+                <button id="celciusToFahrenheit">Convert</button>
               </div>
             </div>
-            <!-- <div id="overlay"></div> -->
+            <div class="overlay" id="overlay"></div>
           </li>
         </ul>
       </div>

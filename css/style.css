@@ -275,7 +275,7 @@ a:hover:after{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  transition: 1s;
+  transition: 0.5s;
   z-index: 52;
   padding: 1rem;
   background-color: #F0E7DB;
@@ -309,9 +309,26 @@ a:hover:after{
   color: black;
 }
 
-#overlay {
+.modal-body input {
+  color: black;
+}
+
+.modal-body button {
+  background-color: white;
+  color: black;
+  padding: 0.125rem;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 0.25rem
+}
+
+.modal-body button:hover {
+  background-color: #e6e6e6;
+}
+
+.overlay.active {
   position: fixed;
-  /* opacity: 0; */
+  opacity: 0;
   top: 0;
   bottom: 0;
   left: 0;
@@ -321,7 +338,7 @@ a:hover:after{
   pointer-events: none;
 }
 
-#overlay.active {
+.overlay.active {
   opacity: 1;
   pointer-events: all;
 }
