@@ -27,7 +27,7 @@ nav {
   font-size: 1.5rem;
   padding: 8px;
   user-select: none;
-  z-index: 100;
+  z-index: 50;
 }
 
 .nav-background {
@@ -88,7 +88,7 @@ a:hover:after{
 
 .hamburger-menu {
   padding: 10px;
-  z-index: 100;
+  z-index: 50;
 }
 
 .hamburger-menu input {
@@ -247,6 +247,83 @@ a:hover:after{
   display: block;
   width: 250px;
   height: 250px;
+}
+
+.modal-button {
+  position: relative;
+  bottom: 1.45rem;
+  background-color: transparent;
+  color: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.modal-button:hover {
+  background-color: #00000040;
+}
+
+.modal-button:active {
+  background-color: #00000065;
+}
+
+.modal {
+  width: 400px;
+  height: max-content;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 1s;
+  z-index: 52;
+  padding: 1rem;
+  background-color: #F0E7DB;
+  border: 2px solid white;
+  border-radius: 0.5rem;
+}
+
+.modal.active{
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-head > * {
+  margin-bottom: 1rem;
+  color: black;
+  font-weight: 600;
+}
+
+.modal-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bx-window-close {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.modal-body {
+  margin-top: 1rem;
+  color: black;
+}
+
+#overlay {
+  position: fixed;
+  /* opacity: 0; */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 51;
+  background-color: #00000050;
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
 }
 
 /* Contact */

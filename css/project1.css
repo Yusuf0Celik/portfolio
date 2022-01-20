@@ -98,7 +98,7 @@ main {
   display: none;
 }
 
-.current-slide {
+.active {
   display: initial;
 }
 
@@ -112,20 +112,21 @@ main {
   outline: none;
   font-size: 2rem;
   cursor: pointer;
+  transition: 0.4s;
 }
 
 .carousel-button:hover {
   background-color: #00000030;
 }
 
-.prev {
+.prevbtn {
   position: relative;
   top: -260px;
   left: -470px;
   transform: translateY(-50%);
 }
 
-.next {
+.nextbtn {
   position: relative;
   top: -260px;
   right: -470px;
@@ -139,4 +140,8 @@ main {
   border-radius: 50%;
   outline: none;
   margin: 0.25rem 0.125rem;
+}
+
+.current-indicator {
+  background-color: #00ffff;
 }
