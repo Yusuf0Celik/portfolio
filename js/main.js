@@ -33,12 +33,32 @@ function closeModal(modal) {
 
 // Convert Celcsius to Fahrenheit
 
-const celcToFahr = document.querySelector("celciusToFahrenheit");
-const celsius = document.querySelector("toCelsius");
-const fahrenheit = document.querySelector("toFahrenheit");
+const fahrenheitButton = document.querySelector(".button.Fahrenheit");
+const celciusButton = document.querySelector(".button.Celcius")
+const fahrenheit = document.querySelector(".toFahrenheit");
+const celcius = document.querySelector(".toCelcius");
+const buttonSwitch = document.querySelector(".button-switch");
+// berekent en schrijft hoeveel farenheit celcius is//  
 
-celcToFahr.addEventListener("click", function() {
-  let celsius = document.getElementById("toCelcius").value;
-  let fahrenheit = ((9/5) * c) + 32;
-  document.getElementById("toFahrenheit").value = f;
-})
+if (buttonSwitch) {
+  buttonSwitch.addEventListener("click", function() {
+    const theBody = document.body;
+    theBody.classList.toggle("background");
+  })
+}
+
+if (fahrenheitButton) {
+  fahrenheitButton.addEventListener("click", fahrenheitConverter);
+  celciusButton.addEventListener("click", celciusConverter2);
+}
+
+function fahrenheitConverter() {
+  const fahrenheitValue = fahrenheit.value;
+  document.querySelector(".toCelcius").innerHTML=(fahrenheitValue-32)/1.8;
+}
+
+// berekent en schrijft hoeveel celcius farenheit is//
+function celciusConverter2() {
+  const celciusValue = celcius.value;
+  document.querySelector(".toFahrenheit").innerHTML=(celciusValue*1.8)+32;
+} 

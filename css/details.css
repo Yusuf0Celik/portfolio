@@ -84,65 +84,18 @@ a:hover:after{
   transition: 3s;
 }
 
-/* Carousel */
+/* Details */
 
-main {
-  margin-top: 61px;
+.details {
+  margin-top: 100px;
 }
 
-.project-content {
+.details-title {
+  font-size: 1.5rem;
   text-align: center;
-  margin-top: 8rem;
 }
 
-.slide {
-  display: none;
-}
-
-.active {
-  display: initial;
-}
-
-.slide img {
-  border-radius: 0.25rem;
-}
-.carousel-button {
-  background-color: transparent;
-  border: none;
-  border-radius: 50%;
-  outline: none;
-  font-size: 2rem;
-  cursor: pointer;
-  transition: 0.4s;
-}
-
-.carousel-button:hover {
-  background-color: #00000030;
-}
-
-.prevbtn {
-  position: relative;
-  top: -260px;
-  left: -470px;
-  transform: translateY(-50%);
-}
-
-.nextbtn {
-  position: relative;
-  top: -260px;
-  right: -470px;
-  transform: translateY(-50%);
-}
-
-.carousel-indicator {
-  width: 0.75rem;
-  height: 0.75rem;
-  border: none;
-  border-radius: 50%;
-  outline: none;
-  margin: 0.25rem 0.125rem;
-}
-
-.current-indicator {
-  background-color: #00ffff;
+.details-text {
+  width: 35rem;
+  margin: 3rem auto;
 }
