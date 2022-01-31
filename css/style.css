@@ -236,21 +236,30 @@ a:hover:after{
 
 .project-blank {
   width: 250px;
-  height: 249px;
+  height: 250px;
 }
 
 .project {
   width: 250px;
   height: 250px;
+  margin: 1rem;
   border: 2px solid white;
   border-radius: .125rem;
 }
 
 .calculator {
   background-color: #252525;
-  margin: auto;
+  margin-left: auto;
   background-image: url(https://yusuf0celik.github.io/portfolio/img/calculator.png);
   background-size: 100%;
+}
+
+.escape-room {
+  margin-right: auto;
+  background-image: url(https://yusuf0celik.github.io/Escape-room/img/home.png);
+  background-size: 30rem;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .project1-img {
