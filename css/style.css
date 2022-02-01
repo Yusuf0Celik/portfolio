@@ -242,9 +242,9 @@ a:hover:after{
 .project {
   width: 250px;
   height: 250px;
-  margin: 1rem;
+  margin: 0.75rem;
   border: 2px solid white;
-  border-radius: .125rem;
+  border-radius: .25rem;
 }
 
 .calculator {
@@ -364,6 +364,28 @@ a:hover:after{
   pointer-events: all;
 }
 
+/* Github Link */
+
+.github-link-div {
+  position: relative;
+  top: 14rem;
+  left: 14.25rem;
+  width: max-content;
+  padding: 0.125rem;
+}
+
+.github-link:hover {
+  background-color: #ffffff50;
+}
+
+.github-link {
+  transition: 300ms ease-in-out;
+}
+
+.github-link:hover i {
+  color: #00ffff;
+}
+
 /* Contact */
 
 .contact-title {
@@ -432,16 +454,8 @@ a:hover:after{
     display: block;
   }
   
-  .project1 {
-    margin: 0 auto;
-  }
-  
-  .project2 {
-    margin: 0.5rem auto;
-  }
-  
-  .project3 {
-    margin: 0 auto;
+  .project {
+    margin: 1rem auto;
   }
 }
 
@@ -449,22 +463,19 @@ a:hover:after{
   .hamburger-menu {
     display: none;
   }
-  
 }
 
 @media (max-width: 992px) {
   .aboutme-content {
     display: block;
   }
-  
+
   .aboutme-text {
     margin: 0 auto;
-    padding: 0.5rem;
   }
-  
+
   .aboutme-img {
     margin: 0 auto;
-    padding: 0.5rem;
   }
 }
 
